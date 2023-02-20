@@ -19,6 +19,7 @@
 }
 
 /* --MAIN-- */
+
 .question-card {
     display: flex;
     position: relative;
@@ -32,7 +33,6 @@
     border-width: 3px;
     padding: 50px;
     margin: 80px;
-
 }
 
 .card-bookmark {
@@ -64,6 +64,7 @@ button:active {
 }
 
 /* TAGS */
+
 .categories-list {
     align-self: flex-start;
     display: flex;
@@ -111,12 +112,6 @@ button:active {
     height: 40px;
 }
 
-img:hover {
-    size: 110%;
-
-}
-
-
 /* PROFILE PAGE */
 
 .profile-top {
@@ -126,50 +121,75 @@ img:hover {
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
-
 }
 
 .profile-about {
     display: flex;
     flex-direction: column;
-
     margin: 60px;
     padding: 30 px;
     justify-content: space-around;
     align-items: left;
-
 }
 
+/* COUNTERS */
 
-.counter {
+.counter-box {
     display: flex;
-    flex-direction: column;
-    background-color: #E9E8E8;
     margin: 60px;
     padding: 30 px;
     justify-content: space-around;
     align-items: center;
-
 }
 
-.settings {
+.counter-box ul {
     display: flex;
-    flex-direction: column;
+    margin: 6px;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    border-color: #393053;
     background-color: #E9E8E8;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    background-color: #f2f2f2;
+    gap: 10px;
+}
+
+.counter-box p {
+    margin: 12px;
+}
+
+.counter-box img {
+    margin: 6px;
+    width: 40px;
+    height: 40px;
+}
+
+/* SETTINGS */
+
+.settings-box {
+    display: flex;
     margin: 60px;
     padding: 30 px;
     justify-content: space-around;
     align-items: center;
+}
 
+.settings-box ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+}
+
+.settings-box h2 {
+    font-weight: normal;
 }
 
 .dark-mode {
     display: flex;
-    flex-direction: column;
-    background-color: #E9E8E8;
-    margin: 60px;
-    padding: 30 px;
-    justify-content: space-around;
     align-items: center;
-
+    gap: 30px;
 }
