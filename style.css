@@ -8,11 +8,72 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
     width: 100%;
     z-index: 1;
     background: linear-gradient(#18122B, #635985);
     color: #ffffff;
     height: 80px;
     padding: 50px;
+}
+
+.question-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-color: #393053;
+    background-color: #E9E8E8;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    padding: 50px;
+    margin: 80px;
+
+}
+
+.card-bookmark {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -10%;
+    right: 10%;
+}
+
+button {
+    border: none;
+    background-color: #635985;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 8px 6px;
+}
+
+button:hover {
+    background-color: #01e809;
+    color: black;
+
+}
+
+button:active {
+    opacity: 60%;
+}
+
+/*TAGS*/
+.categories-list {
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 5px;
+}
+
+.categories-list-item {
+    padding: 10px;
+    background-color: #393053;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 10px;
 }
