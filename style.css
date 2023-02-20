@@ -67,7 +67,7 @@ button:active {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    gap: 5px;
+
 }
 
 .categories-list-item {
@@ -76,4 +76,36 @@ button:active {
     color: #ffffff;
     border-radius: 10px;
     font-size: 10px;
+    margin: 5px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(#d0c3f7, #635985);
+    color: #ffffff;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navigation-menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.footer img {
+    margin: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+img:hover {
+    size: 110%;
+
 }
