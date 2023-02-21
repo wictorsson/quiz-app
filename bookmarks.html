@@ -14,17 +14,18 @@
         <h1>Quiz App</h1>
     </header>
 
-    <main>
+    <main class="main" data-js="main">
         <section class="question-card">
-            <a href=""><img class="card-bookmark" src="/assets/bookmark_filled.png" alt="bookmark" /></a>
+            <a href=""><img class="question-card--bookmark" src="./assets/bookmark_filled.png" alt="bookmark" /></a>
             <p>
                 What property flips the axis in flexbox?
             </p>
-            <button type="button">Show Answer</button>
-            <ul class="categories-list" role="list">
-                <li class="categories-list-item">#html</li>
-                <li class="categories-list-item">#flexbox</li>
-                <li class="categories-list-item">#css</li>
+            <button type="button" id="question-card--answer-button">Show Answer</button>
+            <p id="question-card--answer-text"></p>
+            <ul class="question-card--categories-list" role="list">
+                <li class="question-card--categories-list--item">#html</li>
+                <li class="question-card--categories-list--item">#flexbox</li>
+                <li class="question-card--categories-list--item">#css</li>
             </ul>
         </section>
         <!--
@@ -59,13 +60,13 @@
     <footer class="footer">
         <nav>
             <ul class="navigation-menu">
-                <li class="home-link">
+                <li class="navigation-menu--home-link">
                     <a href="./index.html"><img src="./assets/home.png" alt="home"></a>
                 </li>
-                <li class="bookmark-link">
+                <li class="navigation-menu--bookmark-link">
                     <img src="./assets/bookmark_filled.png" class="active" alt="home">
                 </li>
-                <li class="profile-link">
+                <li class="navigation-menu--profile-link">
                     <a href="./profile.html"><img src="./assets/profile.png" alt="home"></a>
                 </li>
             </ul>
