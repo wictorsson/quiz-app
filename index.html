@@ -17,41 +17,43 @@
 
     <main class="main" data-js="main">
         <section class="question-card">
-            <a href=""><img class="card-bookmark" src="./assets/bookmark_filled.png" alt="bookmark" /></a>
+            <a href=""><img class="question-card--bookmark" src="./assets/bookmark_filled.png" alt="bookmark" /></a>
             <p>
                 What property flips the axis in flexbox?
             </p>
-            <button type="button" id="answer-button">Show Answer</button>
-            <p id="answer-text"></p>
-            <ul class="categories-list" role="list">
-                <li class="categories-list-item">#html</li>
-                <li class="categories-list-item">#flexbox</li>
-                <li class="categories-list-item">#css</li>
+            <button type="button" class="question-card--answer-button">Show Answer</button>
+            <p class="question-card--answer-text hidden" id="">flex-direction</p>
+            <ul class="question-card--categories-list" role="list">
+                <li class="question-card--categories-list--item">#html</li>
+                <li class="question-card--categories-list--item">#flexbox</li>
+                <li class="question-card--categories-list--item">#css</li>
             </ul>
         </section>
 
         <section class="question-card">
-            <a href=""><img class="card-bookmark" src="./assets/bookmark.png" alt="bookmark" /></a>
+            <a href=""><img class="question-card--bookmark" src="./assets/bookmark.png" alt="bookmark" /></a>
             <p>
                 What property combines flex-direction and flex-wrap?
             </p>
-            <button type="button" id="answer-button">Show Answer</button>
-            <ul class="categories-list" role="list">
-                <li class="categories-list-item">#html</li>
-                <li class="categories-list-item">#flexbox</li>
-                <li class="categories-list-item">#css</li>
+            <button type="button" class="question-card--answer-button">Show Answer</button>
+            <p class="question-card--answer-text hidden">flex-flow</p>
+            <ul class="question-card--categories-list" role="list">
+                <li class="question-card--categories-list--item">#html</li>
+                <li class="question-card--categories-list--item">#flexbox</li>
+                <li class="question-card--categories-list--item">#css</li>
             </ul>
         </section>
 
         <section class="question-card">
-            <a href=""><img class="card-bookmark" src="./assets/bookmark.png" alt="bookmark" /></a>
+            <a href=""><img class="question-card--bookmark" src="./assets/bookmark.png" alt="bookmark" /></a>
             <p>
                 What git command in the terminal deletes a branch?
             </p>
-            <button type="button">Show Answer</button>
-            <ul class="categories-list" role="list">
-                <li class="categories-list-item">#git</li>
-                <li class="categories-list-item">#shell</li>
+            <button type="button" class="question-card--answer-button">Show Answer</button>
+            <p class="question-card--answer-text hidden">git branch -D</p>
+            <ul class="question-card--categories-list" role="list">
+                <li class="question-card--categories-list--item">#git</li>
+                <li class="question-card--categories-list--item">#shell</li>
             </ul>
         </section>
     </main>
@@ -59,13 +61,13 @@
     <footer class="footer">
         <nav>
             <ul class="navigation-menu">
-                <li class="home-link">
+                <li class="navigation-menu--home-link">
                     <img src="./assets/home_filled.png" class="active" alt="home">
                 </li>
-                <li class="bookmark-link">
+                <li class="navigation-menu--bookmark-link">
                     <a href="./bookmarks.html"><img src="./assets/bookmark_transparent.png" alt="home"></a>
                 </li>
-                <li class="profile-link">
+                <li class="navigation-menu--profile-link">
                     <a href="./profile.html"><img src="./assets/profile.png" alt="home"></a>
                 </li>
             </ul>
