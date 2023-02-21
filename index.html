@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -14,14 +15,15 @@
         <h1>Quiz App</h1>
     </header>
 
-    <main>
+    <main class="main" data-js="main">
         <class="question-card">
             <section class="question-card">
                 <a href=""><img class="card-bookmark" src="/assets/bookmark_filled.png" alt="bookmark" /></a>
                 <p>
                     What property flips the axis in flexbox?
                 </p>
-                <button type="button">Show Answer</button>
+                <button type="button" id="answer-button">Show Answer</button>
+                <p id="answer-text"></p>
                 <ul class="categories-list" role="list">
                     <li class="categories-list-item">#html</li>
                     <li class="categories-list-item">#flexbox</li>
@@ -34,7 +36,7 @@
                 <p>
                     What property combines flex-direction and flex-wrap?
                 </p>
-                <button type="button">Show Answer</button>
+                <button type="button" id="answer-button">Show Answer</button>
                 <ul class="categories-list" role="list">
                     <li class="categories-list-item">#html</li>
                     <li class="categories-list-item">#flexbox</li>
