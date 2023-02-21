@@ -193,3 +193,7 @@ button:active {
     align-items: center;
     gap: 30px;
 }
+
+.dark {
+    background-color: black;
+}
