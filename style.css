@@ -57,10 +57,15 @@
 
 .question-card--bookmark {
     position: absolute;
+    cursor: pointer;
     width: 40px;
     height: 40px;
-    top: -10%;
+    top: -5%;
     right: 10%;
+}
+
+.question-card--bookmark:hover {
+    transform: scale(1.2);
 }
 
 button {
@@ -75,8 +80,9 @@ button {
 }
 
 button:hover {
-    background-color: #01e809;
+    background-color: #baafdd;
     color: var(--black-color);
+    transform: scale(1.08);
 }
 
 button:active {
@@ -108,7 +114,7 @@ button:active {
     bottom: 0px;
     width: 100%;
     z-index: 1;
-    background: var( --bright-purple-color);
+    background: var(--bright-purple-color);
     color: var(--white-color);
     height: 80px;
 }
@@ -123,6 +129,10 @@ button:active {
     margin: 20px;
     width: 40px;
     height: 40px;
+}
+
+.footer img:hover {
+    transform: scale(1.2);
 }
 
 /* PROFILE PAGE */
@@ -196,10 +206,6 @@ button:active {
     gap: 20px;
 }
 
-.settings-box h2 {
-    font-weight: normal;
-}
-
 .settings-box--dark-mode {
     display: flex;
     align-items: center;
@@ -207,5 +213,8 @@ button:active {
 }
 
 .dark {
-    background-color: var(--black-color);
+    background-color: #20262E;
+    color: var(--white-color);
+    --element-bg-color: #5e5e5e;
+    ;
 }
