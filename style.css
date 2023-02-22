@@ -16,10 +16,11 @@
 }
 
 
-/* --HEADER-- */
+/* --HEADER-- 
 .question-card--answer-text {
     visibility: none;
 }
+*/
 
 .hidden {
     visibility: hidden;
@@ -107,7 +108,7 @@ button:active {
     bottom: 0px;
     width: 100%;
     z-index: 1;
-    background: var(--gradient-purple-color);
+    background: var( --bright-purple-color);
     color: var(--white-color);
     height: 80px;
 }
