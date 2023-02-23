@@ -1,7 +1,8 @@
 const mainElement = document.querySelector('[data-js="main"]');
 const bodyElement = document.querySelector('[data-js="body"]');
 const darkModeToggle = document.querySelector("#darkmode-switch");
-var darkModeState;
+//let darkModeState;
+
 const answerButtonElement = document.querySelectorAll(
   ".question-card--answer-button"
 );
@@ -33,23 +34,28 @@ for (let i = 0; i < bookmarkElement.length; i++) {
   });
 }
 
+//let darkModeState = "darkMode";
+
 if (darkModeToggle) {
   darkModeToggle.addEventListener("change", () => {
     if (darkModeToggle.checked) {
       bodyElement.classList.add("dark");
-      darkModeState = true;
+      localStorage.setItem("darkMode", true);
+      console.log(localStorage.getItem("darkMode"));
     } else {
       bodyElement.classList.remove("dark");
-      darkModeState = false;
+      localStorage.setItem("darkMode", false);
+      console.log(localStorage.getItem("darkMode"));
     }
   });
 }
 
-// if (darkModeToggle) {
-//   bodyElement.classList.add("dark");
-// } else {
-//   bodyElement.classList.remove("dark");
-// }
+if (localStorage.getItem("darkMode") == "true") {
+  bodyElement.classList.add("dark");
+  console.log("added");
+} else {
+  bodyElement.classList.remove("dark");
+}
 
 /*
 answerButtonElement.forEach((button, i) => {
