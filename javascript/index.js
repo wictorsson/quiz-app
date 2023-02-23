@@ -1,7 +1,6 @@
 const mainElement = document.querySelector('[data-js="main"]');
 const bodyElement = document.querySelector('[data-js="body"]');
 const darkModeToggle = document.querySelector("#darkmode-switch");
-//let darkModeState;
 
 const answerButtonElement = document.querySelectorAll(
   ".question-card--answer-button"
@@ -10,6 +9,12 @@ const answerTextElement = document.querySelectorAll(
   ".question-card--answer-text"
 );
 const bookmarkElement = document.querySelectorAll(".question-card--bookmark");
+
+const bookmarkCounter = document.querySelector(".counter-box--bookmark-number");
+
+if (bookmarkCounter) {
+  bookmarkCounter.textContent = localStorage.getItem("bookMarkCounter");
+}
 
 for (let i = 0; i < answerButtonElement.length; i++) {
   answerButtonElement[i].addEventListener("click", () => {
@@ -23,40 +28,47 @@ for (let i = 0; i < answerButtonElement.length; i++) {
   });
 }
 
+localStorage.setItem("bookMarkCounter", 0);
+
 for (let i = 0; i < bookmarkElement.length; i++) {
   bookmarkElement[i].addEventListener("click", () => {
     //console.log(i);
     if (bookmarkElement[i].getAttribute("src") === "./assets/bookmark.png") {
       bookmarkElement[i].setAttribute("src", "./assets/bookmark_filled.png");
+      let bookMarkCounter = localStorage.getItem("bookMarkCounter");
+      bookMarkCounter = Number(bookMarkCounter) + 1;
+
+      localStorage.setItem("bookMarkCounter", bookMarkCounter);
+      console.log(localStorage.getItem("bookMarkCounter"));
     } else {
       bookmarkElement[i].setAttribute("src", "./assets/bookmark.png");
+      let bookMarkCounter = localStorage.getItem("bookMarkCounter");
+      bookMarkCounter = Number(bookMarkCounter) - 1;
+      localStorage.setItem("bookMarkCounter", bookMarkCounter);
+      console.log(localStorage.getItem("bookMarkCounter"));
     }
   });
 }
-
-//let darkModeState = "darkMode";
 
 if (darkModeToggle) {
   darkModeToggle.addEventListener("change", () => {
     if (darkModeToggle.checked) {
       bodyElement.classList.add("dark");
       localStorage.setItem("darkMode", true);
-      console.log(localStorage.getItem("darkMode"));
     } else {
       bodyElement.classList.remove("dark");
       localStorage.setItem("darkMode", false);
-      console.log(localStorage.getItem("darkMode"));
     }
   });
 }
 
 if (localStorage.getItem("darkMode") == "true") {
   bodyElement.classList.add("dark");
-  console.log("added");
 } else {
   bodyElement.classList.remove("dark");
 }
 
+// Alternativ for loop
 /*
 answerButtonElement.forEach((button, i) => {
   button.addEventListener("click", () => {
