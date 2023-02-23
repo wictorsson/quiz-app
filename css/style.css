@@ -1,3 +1,5 @@
+@import "./profile.css";
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
@@ -13,17 +15,6 @@
     --element-bg-color: #E9E8E8;
     --white-color: white;
     --black-color: black;
-}
-
-
-/* --HEADER-- 
-.question-card--answer-text {
-    visibility: none;
-}
-*/
-
-.hidden {
-    visibility: hidden;
 }
 
 .header {
@@ -57,10 +48,15 @@
 
 .question-card--bookmark {
     position: absolute;
+    cursor: pointer;
     width: 40px;
     height: 40px;
-    top: -10%;
+    top: -5%;
     right: 10%;
+}
+
+.question-card--bookmark:hover {
+    transform: scale(1.2);
 }
 
 button {
@@ -75,8 +71,9 @@ button {
 }
 
 button:hover {
-    background-color: #01e809;
+    background-color: #baafdd;
     color: var(--black-color);
+    transform: scale(1.08);
 }
 
 button:active {
@@ -108,7 +105,7 @@ button:active {
     bottom: 0px;
     width: 100%;
     z-index: 1;
-    background: var( --bright-purple-color);
+    background: var(--bright-purple-color);
     color: var(--white-color);
     height: 80px;
 }
@@ -125,87 +122,17 @@ button:active {
     height: 40px;
 }
 
-/* PROFILE PAGE */
-
-.profile-top {
-    display: flex;
-    margin: 40px;
-    padding: 30 px;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 40px;
-}
-
-.profile-about {
-    display: flex;
-    flex-direction: column;
-    margin: 60px;
-    padding: 30 px;
-    justify-content: space-around;
-    align-items: left;
-}
-
-/* COUNTERS */
-
-.counter-box {
-    display: flex;
-    margin: 60px;
-    padding: 30 px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.counter-box ul {
-    display: flex;
-    margin: 6px;
-    justify-content: flex-start;
-    align-items: center;
-    list-style: none;
-    border-color: var(--dark-purple-color);
-    background-color: var(--element-bg-color);
-    border-radius: 15px;
-    border-style: solid;
-    border-width: 3px;
-    gap: 10px;
-}
-
-.counter-box p {
-    margin: 12px;
-}
-
-.counter-box img {
-    margin: 6px;
-    width: 40px;
-    height: 40px;
-}
-
-/* SETTINGS */
-
-.settings-box {
-    display: flex;
-    margin: 60px;
-    padding: 30 px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.settings-box ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 20px;
-}
-
-.settings-box h2 {
-    font-weight: normal;
-}
-
-.settings-box--dark-mode {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.footer img:hover {
+    transform: scale(1.2);
 }
 
 .dark {
-    background-color: var(--black-color);
+    background-color: #20262E;
+    color: var(--white-color);
+    --element-bg-color: #5e5e5e;
+    ;
+}
+
+.hidden {
+    visibility: hidden;
 }
