@@ -1,10 +1,12 @@
 @import "./profile.css";
+/* TODO split into more separate files  */
 
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     margin: 0px;
 }
+
 
 
 :root {
@@ -45,6 +47,7 @@
     padding: 50px;
     margin: 80px;
 }
+
 
 .question-card--bookmark {
     position: absolute;
@@ -135,4 +138,28 @@ button:active {
 
 .hidden {
     visibility: hidden;
+}
+
+
+/* FORM */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 0px;
+
+}
+
+.submitbutton {
+    margin: 10px;
+}
+
+textarea {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 8px 6px;
+}
+
+input {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 8px 6px;
 }

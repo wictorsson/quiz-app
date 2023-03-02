@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./javascript/index.js" defer></script>
+</head>
+
+<body data-js="body">
+    <header class="header">
+        <h1>Quiz App</h1>
+    </header>
+
+    <main class="main">
+        <section class="question-card">
+
+            <form data-js="form">
+                <fieldset>
+                    <label for="your-question">Your Question</label>
+                    <textarea name="your-question" id="your-question-name" rows="4" cols="50" maxlength="150"
+                        data-js="questionMessage"></textarea>
+                    <small class="form__character-count">(<span data-js="amountLeftQuestion"></span> characters
+                        left)</small>
+                </fieldset>
+
+                <fieldset>
+                    <label for="your-answer">Your Answer</label>
+                    <textarea name="your-answer" id="your-answer" rows="4" cols="50" maxlength="150"
+                        data-js="answerMessage"></textarea>
+                    <small class="form__character-count">(<span data-js="amountLeftAnswer"></span> characters
+                        left)</small>
+                </fieldset>
+                <fieldset>
+                    <label for="tags">Tags</label>
+                    <input type="text" name="tags" id="tags" />
+                </fieldset>
+
+                <button type="submit" class="submitbutton">Add Card</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <nav>
+            <ul class="navigation-menu">
+                <li class="navigation-menu--home-link">
+                    <a href="./index.html"><img src="./assets/home.png" alt="home"></a>
+                </li>
+                <li class="navigation-menu--bookmark-link">
+                    <a href="./bookmarks.html"><img src="./assets/bookmark_transparent.png" alt="home"></a>
+                </li>
+                <li class="navigation-menu--profile-link">
+                    <img src="./assets/add_filled.png" class="active" alt="home">
+                </li>
+
+                <li class="navigation-menu--profile-link">
+                    <a href="./profile.html"><img src="./assets/profile.png" alt="home"></a>
+                </li>
+
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
