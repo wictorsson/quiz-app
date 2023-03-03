@@ -10,23 +10,50 @@
     <script src="./javascript/index.js" defer></script>
 </head>
 
-<body data-js="body">
+<body class="bookmark-body" data-js="body">
     <header class="header">
         <h1>Quiz App</h1>
     </header>
 
     <main class="main" data-js="main">
         <section class="question-card">
-            <a href=""><img class="question-card--bookmark" src="./assets/bookmark_filled.png" alt="bookmark" /></a>
+            <a><img class="question-card--bookmark" src="./assets/bookmark.png" alt="bookmark" /></a>
             <p>
                 What property flips the axis in flexbox?
             </p>
-            <button type="button" id="question-card--answer-button">Show Answer</button>
-            <p id="question-card--answer-text"></p>
+            <button type="button" class="question-card--answer-button">Show Answer</button>
+            <p class="question-card--answer-text answer--hidden" id="">flex-direction</p>
             <ul class="question-card--categories-list" role="list">
                 <li class="question-card--categories-list--item">#html</li>
                 <li class="question-card--categories-list--item">#flexbox</li>
                 <li class="question-card--categories-list--item">#css</li>
+            </ul>
+        </section>
+
+        <section class="question-card">
+            <a><img class="question-card--bookmark" src="./assets/bookmark.png" alt="bookmark" /></a>
+            <p>
+                What property combines flex-direction and flex-wrap?
+            </p>
+            <button type="button" class="question-card--answer-button">Show Answer</button>
+            <p class="question-card--answer-text answer--hidden">flex-flow</p>
+            <ul class="question-card--categories-list" role="list">
+                <li class="question-card--categories-list--item">#html</li>
+                <li class="question-card--categories-list--item">#flexbox</li>
+                <li class="question-card--categories-list--item">#css</li>
+            </ul>
+        </section>
+
+        <section class="question-card">
+            <a><img class="question-card--bookmark" src="./assets/bookmark.png" alt="bookmark" /></a>
+            <p>
+                What git command in the terminal deletes a branch?
+            </p>
+            <button type="button" class="question-card--answer-button">Show Answer</button>
+            <p class="question-card--answer-text answer--hidden">git branch -D</p>
+            <ul class="question-card--categories-list" role="list">
+                <li class="question-card--categories-list--item">#git</li>
+                <li class="question-card--categories-list--item">#shell</li>
             </ul>
         </section>
         <!--
@@ -66,6 +93,9 @@
                 </li>
                 <li class="navigation-menu--bookmark-link">
                     <img src="./assets/bookmark_filled.png" class="active" alt="home">
+                </li>
+                <li class="navigation-menu--profile-link">
+                    <a href="./form.html"> <img src="./assets/add.png" class="active" alt="home"></a>
                 </li>
                 <li class="navigation-menu--profile-link">
                     <a href="./profile.html"><img src="./assets/profile.png" alt="home"></a>
