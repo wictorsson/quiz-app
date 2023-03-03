@@ -71,16 +71,18 @@ button {
     border-radius: 10px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0 8px 6px;
+    transition: box-shadow 500ms, background-color 300ms;
 }
 
 button:hover {
     background-color: #baafdd;
     color: var(--black-color);
-    transform: scale(1.08);
+    box-shadow: rgba(0, 0, 0, 0.64) 0 8px 6px;
+    /* transform: scale(1.08); */
 }
 
 button:active {
-    opacity: 60%;
+    opacity: 50%;
 }
 
 /* TAGS */
@@ -133,11 +135,23 @@ button:active {
     background-color: #20262E;
     color: var(--white-color);
     --element-bg-color: #5e5e5e;
-    ;
 }
 
 .hidden {
     visibility: hidden;
+}
+
+.question-card--answer-text {
+    opacity: 1.0;
+    transition: transform 1.0s;
+    font-size: large;
+    gap: 50px;
+}
+
+.answer--hidden {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0.0;
+    /* background: rgb(0, 0, 0); */
 }
 
 

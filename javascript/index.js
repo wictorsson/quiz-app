@@ -37,7 +37,7 @@ if (questionElement || answerElement) {
   });
 }
 
-// SET darkmode to the page on load
+// SET darkmode to the current page on load
 if (localStorage.getItem("darkMode") == "true") {
   bodyElement.classList.add("dark");
 } else {
@@ -102,7 +102,7 @@ function ResetAnswerButton() {
 
   for (let i = 0; i < answerButtonElement.length; i++) {
     answerButtonElement[i].addEventListener("click", () => {
-      answerTextElement[i].classList.toggle("hidden");
+      answerTextElement[i].classList.toggle("answer--hidden");
 
       if (answerButtonElement[i].textContent === "Show Answer") {
         answerButtonElement[i].textContent = "Hide Answer";
@@ -159,7 +159,7 @@ if (form) {
     cardSection.append(answerParagraph);
     //GET answer text by classname
     answerParagraph.textContent = data["your-answer"];
-    answerParagraph.className = "question-card--answer-text hidden";
+    answerParagraph.className = "question-card--answer-text answer--hidden";
 
     const tagList = document.createElement("ul");
     cardSection.append(tagList);
