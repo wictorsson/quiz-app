@@ -59,7 +59,7 @@ if (main) {
     const answerButton = document.createElement("button");
     cardSection.append(answerButton);
     answerButton.className = "question-card--answer-button";
-    answerButton.textContent = "Your Answer";
+    answerButton.textContent = "Show Answer";
 
     const answerParagraph = document.createElement("p");
     cardSection.append(answerParagraph);
