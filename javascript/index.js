@@ -4,7 +4,6 @@ const bodyElement = document.querySelector('[data-js="body"]');
 const bookmarkBodyPage = document.querySelector(".bookmark-body");
 const darkModeToggle = document.querySelector("#darkmode-switch");
 
-// SET form variables
 const form = document.querySelector('[data-js="form"]');
 const questionElement = document.querySelector('[data-js="questionMessage"]');
 const amountLeftQuestion = document.querySelector(
@@ -19,7 +18,6 @@ var questionList;
 if (bookmarkBodyPage) {
   questionList = questionListFile.filter(function (obj, index) {
     const bookmarkIndex = localStorage.getItem("bookMarkindex" + index);
-
     return bookmarkIndex === "true";
   });
   if (questionList.length < 1) {
@@ -47,15 +45,13 @@ if (main) {
     if (!bookmarkBodyPage) {
       const bookmarkArea = document.createElement("a");
       cardSection.append(bookmarkArea);
-
       const bookmarkImage = document.createElement("img");
       bookmarkArea.append(bookmarkImage);
       bookmarkImage.className = "question-card--bookmark";
       bookmarkImage.src = "./assets/bookmark.png";
     }
-    //GET question text by classname
-    questionParagraph.textContent = questionList[index].question;
 
+    questionParagraph.textContent = questionList[index].question;
     const answerButton = document.createElement("button");
     cardSection.append(answerButton);
     answerButton.className = "question-card--answer-button";

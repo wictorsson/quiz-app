@@ -29,6 +29,7 @@
     color: var(--white-color);
     height: 80px;
     padding: 50px;
+    box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.3);
 }
 
 /* --MAIN-- */
@@ -56,11 +57,11 @@ body {
     border-radius: 15px;
     border-style: solid;
     border-width: 1px;
-    padding: 4%;
-    width: 75%;
-    margin: 25px;
+    padding: 2.5%;
+    width: 45%;
+    margin: 20px;
 
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
@@ -70,7 +71,7 @@ body {
     width: 40px;
     height: 40px;
     top: -5%;
-    right: 10%;
+    right: 1%;
 }
 
 .question-card--bookmark:hover {
@@ -79,16 +80,18 @@ body {
 
 button {
     border: none;
-    position: absolute;
-    bottom: 40%;
+    /* position: absolute; */
+    bottom: 45%;
     background-color: var(--main-color);
     color: var(--white-color);
-    padding: 10px 15px;
+    padding: 8px 10px;
     text-align: center;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0 8px 6px;
     transition: box-shadow 500ms, background-color 300ms;
+    font-size: 12px;
+
 }
 
 button:hover {
@@ -100,6 +103,13 @@ button:hover {
 
 button:active {
     opacity: 50%;
+}
+
+
+.submitbutton {
+
+    position: relative;
+
 }
 
 /* TAGS */
@@ -135,6 +145,7 @@ button:active {
     background: #536abe;
     color: var(--white-color);
     height: 80px;
+    box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.3);
 }
 
 .navigation-menu {
@@ -166,16 +177,16 @@ button:active {
 }
 
 .question-card--answer-text {
+    transition: opacity 1.0s;
     opacity: 1.0;
-    transition: transform 1.0s;
-    font-size: 14px;
+    font-size: 12px;
     margin: 10px;
 }
 
 .answer--hidden {
-    transform: translate3d(-100%, 0, 0);
+
     opacity: 0.0;
-    /* background: rgb(0, 0, 0); */
+    /* Set the opacity to 1 for hidden elements */
 }
 
 .settings-box--dark-mode {
@@ -195,6 +206,12 @@ button:active {
 
 
 /* FORM */
+
+.form {
+    display: column;
+    flex-direction: row;
+}
+
 fieldset {
     display: flex;
     flex-direction: column;
