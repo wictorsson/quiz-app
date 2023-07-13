@@ -96,8 +96,10 @@ if (questionElement || answerElement) {
 // SET darkmode to the current page on load
 if (localStorage.getItem("darkMode") == "true") {
   bodyElement.classList.add("dark");
+  darkModeToggle.checked = true;
 } else {
   bodyElement.classList.remove("dark");
+  darkModeToggle.checked = false;
 }
 
 // Attach add listeners
